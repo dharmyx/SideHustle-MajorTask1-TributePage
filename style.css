@@ -1,36 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 body {
-    background-color: #212121;
-}
-main {
-    width: 90%;
-    height: 80vh;
-    margin: 4rem auto 0;
-    background-color: #202020;
-    border: 3px solid #FFDB58;
-    border-radius: 80px;
-    display: grid;
-    grid-template-columns: 60% auto;
-    grid-template-rows: repeat(auto);
-    grid-template-areas: auto;
-    gap: 2rem;
-}
-div.image-bg {
-    background-image: url('/Users/apple/Desktop/Projects/SideHustle Internship/SideHustle-MajorTask1-TributePage/MyDukia/testImagE1.jpg');
+    background-color: #f1f1f1;
+    font-family: 'Didact Gothic', 'Lato', 'Montserrat', sans-serif;
+    background-image: url(/MyDukia/tribute-bg.jpeg);
     background-attachment: fixed;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 }
-div.hero2 {
+/*
+main {
+    background-image: url(/MyDukia/tribute-bg.jpeg);
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+header {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    padding: 2rem 2rem 0 0;
+}
+p.achieve > a,
+p.myinfo > a {
+    color: #f1f1f1;
+    padding: 20px;
+    text-decoration: none;
+}
+div.heroLanding {
+    padding: 10rem 0;
+}
+h1.myhero {
+    font-size: 5rem;
+    text-align: center;
+    color: #f1f1f1;
+}
+p.myhero-text {
+    color: #f1f1f1;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 50%;
+    margin: 2.5rem auto 0;
+}
+section#qualities {
+    /*background-color: #1c1c1c;*/
+    padding: 3rem;
+}
+div.innerSection {
+    width: 80%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 45% auto;
+    grid-template-rows: repeat(auto);
+    grid-template-areas: auto;
+    gap: 20px;
+}
+div.one {
+    width: auto;
+    height: 450px;
+    border: 4px double;
+    margin: 30px;
+    background-image: url(/MyDukia/mom1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     align-self: center;
-    border: 1px solid #FFDB58;
 }
-h1.tribute-heading,
-h2.ondo {
-    text-align: end;
+div.two {
+    align-self: center;
+    padding: 10px 2rem;
 }
+h2.head {
+    font-size: 2rem;
+}
+p.textz {
+    font-size: .95rem;
+    text-align: justify;
+}
+h1.mom {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+section#info {
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+div.mypix {
+    width: 60px;
+    height: 60px;
+    border: 4px double #70707050;
+    border-radius: 50%;
+    background-image: url(/MyDukia/dharmyx.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: .95rem;
+    }
+    h1.myhero {
+        font-size: 3.5rem;
+    }
+    p.myhero-text {
+        font-size: .95rem;
+        width: 70%;
+        margin: 3.5rem auto 0;
+    }
+    div.innerSection {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    div.one {
+        width: 90%;
+        height: 400px;
+        background-position: top center;
+    }
+    section#info {
+        width: 85%;
+        padding: .85rem;
+        flex-direction: column;
+        background-color: #ffffff;
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 425px) {
+    section#qualities {
+        padding: 3rem 1rem;
+    }
+    header {
+        margin: auto;
+        padding: 2rem 0 0 0;
+    }
+    div.heroLanding {
+        padding: 3rem 0 10rem;
+    }
+    h1.myhero {
+        font-size: 2.5rem;
+    }
+    p.myhero-text {
+        font-size: .9rem;
+        width: 90%;
+        margin: 2.5rem auto 0;
+    }
+    div.innerSection {
+        width: auto;
+        padding: 0;
+        gap: 0px;
+    }
+    p.textz {
+        font-size: .85rem;
+    }
+    section#info {
+        text-align: center;
+        width: 90%;
+        font-size: .8rem;
+    }
+    div.mypix {
+        width: 90px;
+        height: 90px;
+    }   
+}
+
